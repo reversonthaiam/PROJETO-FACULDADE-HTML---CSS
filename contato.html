@@ -1,17 +1,20 @@
-<!-- 
-Uma pequeno ALERTA para você que está baixando o projeto e não assistiu o vídeo, esse site foi estruturado utilizando table, mas não é a recomendação para desenvolvimento de sites profissionais, só utilizei nesse projeto para testar os conhecimentos já adquiridos até o momento no curso, mais adiante iremos criar sites mais profissionais utilizando html e css.
--->
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-	<title>PUC - contato</title>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PUC - Página principal</title>
+
+	<link rel="stylesheet" href="style.css">
+
+
 </head>
 
-<body background="imagens/fundo2.png">
+<body>
 
-	<table border="0" width="900" align="center">
+	<table align="center" border="0" width="900">
 
 		<tr>
 			<td height="89"><img width="150" src="imagens/logo1.png"> </td>
@@ -27,26 +30,66 @@ Uma pequeno ALERTA para você que está baixando o projeto e não assistiu o ví
 
 				<h2>Entre em contato</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mollis nisl.
+					Preencha este formulario para nos contactar
 				</p>
 
 				<hr>
 
-				<form>
 
-					Seu e-mail: <br>
-					<input type="text" name="email"><br>
+				<div class="formulario">
 
-					Assunto: <br>
-					<input type="text" name="assunto"><br>
 
-					Descrição: <br>
-					<textarea></textarea><br>
 
-					<input type="submit" value="Enviar">
+					<form>
 
-				</form>
+						<div class="input-email">
 
+							Seu e-mail: <br>
+							<input type="text" name="email"><br>
+
+							Assunto: <br>
+							<input type="text" name="assunto"><br>
+
+							<p>Assunto: <br>
+								<SELECT name=assunto>
+									<OPTION value=1>Problema 1</OPTION>
+									<OPTION value=2>Problema 2</OPTION>
+									<OPTION value=3>Problema 3</OPTION>
+									<OPTION value=4>Problema 4</OPTION>
+								</SELECT>
+						</div>
+
+
+
+						<h3>Qual seu departamento: </h3>
+						<div class="input-radio">
+							<INPUT type=radio name=cor value=1>Departamento pessoal <BR>
+							<INPUT type=radio name=cor value=2 checked>Cantina <BR>
+							<INPUT type=radio name=cor value=3>Recepçao <BR>
+							<INPUT type=radio name=cor value=4>Laboratorio <BR>
+						</div>
+
+						<h3>Tem preferencia de algum atendente:</h3>
+
+						<div class="input-check">
+							<INPUT type=checkbox name=atendente value=1 checked>Não <BR>
+							<INPUT type=checkbox name=atendente value=1>Rafael <BR>
+							<INPUT type=checkbox name=atendente value=2>Bruno <BR>
+							<INPUT type=checkbox name=atendente value=3>Pedro <BR>
+							<INPUT type=checkbox name=atendente value=4>Paulo <BR>
+						</div>
+
+
+						<h3>Descrição do chamado:</h3>
+
+						<textarea></textarea><br>
+						<div class="submit">
+							<input type="submit" value="Enviar">
+						</div>
+
+
+					</form>
+				</div>
 
 			</td>
 		</tr>
